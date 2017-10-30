@@ -1,14 +1,10 @@
 # TooltipExtension Add-on for Vaadin 7
 
-${ComponentClassName} is a UI component add-on for Vaadin 7.
-
-## Online demo
-
-Try the add-on demo at <url of the online demo>
+TooltipExtesion is a UI component extension for Vaadin 7.
 
 ## Download release
 
-Official releases of this add-on are available at Vaadin Directory. For Maven instructions, download and reviews, go to http://vaadin.com/addon/CustomTooltipExtension
+Official releases of this add-on are available at Vaadin Directory. For Maven instructions, download and reviews, go to http://vaadin.com/addon/TooltipExtension
 
 ## Building and running demo
 
@@ -36,30 +32,18 @@ Note that Eclipse may give "Plugin execution not covered by lifecycle configurat
 
 ### Debugging server-side
 
-If you have not already compiled the widgetset, do it now by running vaadin:install Maven target for CustomTooltipExtension-root project.
+If you have not already compiled the widgetset, do it now by running vaadin:install Maven target for TooltipExtension-root project.
 
-If you have a JRebel license, it makes on the fly code changes faster. Just add JRebel nature to your CustomTooltipExtension-demo project by clicking project with right mouse button and choosing JRebel > Add JRebel Nature
+If you have a JRebel license, it makes on the fly code changes faster. Just add JRebel nature to your TooltipExtension-demo project by clicking project with right mouse button and choosing JRebel > Add JRebel Nature
 
-To debug project and make code modifications on the fly in the server-side, right-click the CustomTooltipExtension-demo project and choose Debug As > Debug on Server. Navigate to http://localhost:8080/CustomTooltipExtension-demo/ to see the application.
+To debug project and make code modifications on the fly in the server-side, right-click the TooltipExtension-demo project and choose Debug As > Debug on Server. Navigate to http://localhost:8080/TooltipExtension-demo/ to see the application.
 
 ### Debugging client-side
 
-Debugging client side code in the CustomTooltipExtension-demo project:
+Debugging client side code in the TooltipExtension-demo project:
   - run "mvn vaadin:run-codeserver" on a separate console while the application is running
   - activate Super Dev Mode in the debug window of the application or by adding ?superdevmode to the URL
   - You can access Java-sources and set breakpoints inside Chrome if you enable source maps from inspector settings.
- 
-## Release notes
-
-### Version 1.0-SNAPSHOT
-- ...
-- ...
-
-## Roadmap
-
-This component is developed as a hobby with no public roadmap or any guarantees of upcoming releases. That said, the following features are planned for upcoming releases:
-- ...
-- ...
 
 ## Issue tracking
 
@@ -79,7 +63,7 @@ Contributions are welcome, but there are no guarantees that they are accepted as
 
 Add-on is distributed under Apache License 2.0. For license terms, see LICENSE.txt.
 
-TooltipExtension is written by <...>
+TooltipExtension is written by Katri Haapalinna
 
 # Developer Guide
 
@@ -87,24 +71,12 @@ TooltipExtension is written by <...>
 
 Here is a simple example on how to try out the add-on component:
 
-<...>
+       TextField field1 = new TextField();
+       TooltipExtensionBuilder builder = new TooltipExtentionBuilder();
+       builder.setTooltipText("tooltip")
+               .setPosition(TooltipPosition.TOP)
+               .addTooltipStyleName("newStyle")
+               .build(field1);
+       TextField field2 = new TextField();
+       builder.build(field2);
 
-For a more comprehensive example, see src/test/java/org/vaadin/template/demo/DemoUI.java
-
-## Features
-
-### Feature A
-
-<...>
-
-### Feature B
-
-<...>
-
-### Feature C
-
-<...>
-
-## API
-
-TooltipExtension JavaDoc is available online at <...>
