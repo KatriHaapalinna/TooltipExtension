@@ -4,7 +4,7 @@ TooltipExtesion is a UI component extension for Vaadin 7.
 
 ## Download release
 
-Official releases of this add-on are available at Vaadin Directory. For Maven instructions, download and reviews, go to http://vaadin.com/addon/TooltipExtension
+Official releases of this add-on are available at Vaadin Directory. For Maven instructions, download and reviews, go to https://vaadin.com/directory/component/tooltipextension-add-on
 
 ## Building and running demo
 
