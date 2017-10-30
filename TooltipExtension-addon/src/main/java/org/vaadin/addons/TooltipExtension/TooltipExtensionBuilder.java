@@ -23,9 +23,9 @@ import com.vaadin.ui.AbstractComponent;
  *      builder.setTooltipText("tooltip")
  *              .setPosition(TooltipPosition.TOP)
  *              .addTooltipStyleName("newStyle")
- *              .build(field1);
+ *              .createTooltip(field1);
  *      TextField field2 = new TextField();
- *      builder.build(field2);
+ *      builder.createTooltip(field2);
  * </pre>
  *
  */
@@ -270,8 +270,9 @@ public class TooltipExtensionBuilder {
      * Builds the custom tooltip according to Builder properties and specified
      * id and text for tooltip, and adds it to the target component
      *
-     * Note that the id is NOT checked for uniqueness automatically, and that the tooltip text specified in the arguments is NOT set as the
-     * Builder default tooltip text
+     * Note that the id is NOT checked for uniqueness automatically, and that
+     * the tooltip text specified in the arguments is NOT set as the Builder
+     * default tooltip text
      *
      * @param component
      *            target component

@@ -5,7 +5,7 @@
 	<groupId>org.vaadin.addons</groupId>
 	<artifactId>TooltipExtension-root</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0.0.alpha1</version>
+	<version>1.0.0</version>
 	<name>TooltipExtension Add-on Root Project</name>
 
 	<prerequisites>

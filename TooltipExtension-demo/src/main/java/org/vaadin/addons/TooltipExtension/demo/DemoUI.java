@@ -47,6 +47,7 @@ public class DemoUI extends UI {
 
             @Override
             public void buttonClick(ClickEvent event) {
+                tb.setOpacityTransitionDuration(0);
                 tb.createTooltip(component1, "new tooltip text");
             }
 

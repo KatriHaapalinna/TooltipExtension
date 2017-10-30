@@ -71,9 +71,26 @@ public class TooltipExtensionConnector extends AbstractExtensionConnector {
         if (event.hasPropertyChanged("description")
                 && !getState().description.equals("")) {
             getState().description = "";
-        } else if (event.hasPropertyChanged("tooltipStylenames")) {
+        }
+        if (event.hasPropertyChanged("tooltipStylenames")) {
             tooltipStylenames = getState().tooltipStylenames;
             updateStyles();
+        }
+        if (event.hasPropertyChanged("tooltipText")) {
+            tooltipText = getState().tooltipText;
+            tooltipTextSpan.setInnerHTML(tooltipText);
+        }
+        if (event.hasPropertyChanged("id")) {
+            id = getState().id;
+            tooltip.setId(id);
+        }
+        if (event.hasPropertyChanged("positionTransDurationMs")) {
+            mvmntTransitionMs = getState().positionTransDurationMs;
+            setDelays();
+        }
+        if (event.hasPropertyChanged("opacityTransDurationMs")) {
+            opacityTransitionMs = getState().opacityTransDurationMs;
+            setDelays();
         }
     }
 
@@ -81,10 +98,6 @@ public class TooltipExtensionConnector extends AbstractExtensionConnector {
     public TooltipExtensionState getState() {
         return (TooltipExtensionState) super.getState();
     }
-
-    private native void alert(String s) /*-{
-                                        alert('extended '+s);
-                                        }-*/;
 
     @Override
     protected void extend(ServerConnector target) {
