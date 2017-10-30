@@ -76,7 +76,7 @@ Here is a simple example on how to try out the add-on component:
        builder.setTooltipText("tooltip")
                .setPosition(TooltipPosition.TOP)
                .addTooltipStyleName("newStyle")
-               .build(field1);
+               .createTooltip(field1);
        TextField field2 = new TextField();
-       builder.build(field2);
+       builder.createTooltip(field2, "some other tooltip text");
 
