@@ -1,3 +1,6 @@
+[![Published on Vaadin  Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/tooltipextension-add-on)
+[![Stars on Vaadin Directory](https://img.shields.io/vaadin-directory/star/tooltipextension-add-on.svg)](https://vaadin.com/directory/component/tooltipextension-add-on)
+
 # TooltipExtension Add-on for Vaadin 7
 
 TooltipExtesion is a UI component extension for Vaadin 7.
