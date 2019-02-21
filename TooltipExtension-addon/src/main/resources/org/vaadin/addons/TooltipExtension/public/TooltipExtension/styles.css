@@ -27,6 +27,7 @@ div.customTooltipWidget {
 .customTooltipWidget:hover > [class*="customTooltipComponent"]  {
 	visibility: visible;
 	opacity: 1.0;
+	z-index: 9999;
 }
 .customTooltipWidget:hover > .customTooltipComponentRight  {
 	top: 50%;

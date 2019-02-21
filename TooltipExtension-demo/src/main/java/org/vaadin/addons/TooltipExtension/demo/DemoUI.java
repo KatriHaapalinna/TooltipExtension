@@ -38,7 +38,7 @@ public class DemoUI extends UI {
         tb.createTooltipWithId(component1, "newComponent");
 
         final ComboBox component2 = new ComboBox();
-        tb.setPosition(TooltipPosition.RIGHT);
+        tb.setPosition(TooltipPosition.BOTTOM);
         tb.createTooltip(component2, "another tooltip");
 
         Button button = new Button("click this to change tooltip text");
@@ -53,12 +53,17 @@ public class DemoUI extends UI {
 
         });
 
+        final TextField component3 = new TextField();
+        tb.setPosition(TooltipPosition.LEFT);
+        tb.createTooltip(component3, "yet another tooltip");
+
         layout.setMargin(true);
         layout.setSpacing(true);
-        layout.setSizeFull();
-        layout.addComponents(component1, component2, button);
-        layout.setComponentAlignment(component1, Alignment.BOTTOM_CENTER);
-        layout.setComponentAlignment(component2, Alignment.TOP_CENTER);
+        layout.setWidth("100%");
+        layout.addComponents(component1, component2, component3, button);
+        layout.setComponentAlignment(component1, Alignment.MIDDLE_CENTER);
+        layout.setComponentAlignment(component2, Alignment.MIDDLE_CENTER);
+        layout.setComponentAlignment(component3, Alignment.MIDDLE_CENTER);
         setContent(layout);
     }
 }

@@ -26,5 +26,12 @@ $darkgreen: darken($green, 30%);
 	#newComponent >	.customTooltipText {
 			color: pink;
 			background-color: darkgrey;
+			border-color: transparent;
+	}
+
+	.customTooltipText {
+		-webkit-box-shadow: 1px 2px 1px 0px rgb(202, 202, 202);
+		-moz-box-shadow: 1px 2px 1px 0px rgb(202, 202, 202);
+		box-shadow: 1px 2px 1px 0px rgb(202, 202, 202);
 	}
 }
