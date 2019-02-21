@@ -16,9 +16,6 @@ import com.vaadin.client.extensions.AbstractExtensionConnector;
 import com.vaadin.client.ui.AbstractComponentConnector;
 import com.vaadin.shared.ui.Connect;
 
-// Connector binds client-side widget class to server-side component class
-// Connector lives in the client and the @Connect annotation specifies the
-// corresponding server-side component
 @Connect(TooltipExtension.class)
 public class TooltipExtensionConnector extends AbstractExtensionConnector {
     private enum TooltipPosition {
@@ -57,8 +54,7 @@ public class TooltipExtensionConnector extends AbstractExtensionConnector {
     private List<String> tooltipStylenames = new ArrayList<>();
     private int mvmntTransitionMs = 250;
     private int opacityTransitionMs = 250;
-    // ServerRpc is used to send events to server. Communication implementation
-    // is automatically created here
+
     TooltipExtensionServerRpc rpc = RpcProxy
             .create(TooltipExtensionServerRpc.class, this);
 

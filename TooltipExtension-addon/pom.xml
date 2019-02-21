@@ -5,7 +5,7 @@
 	<groupId>org.vaadin.addons</groupId>
 	<artifactId>TooltipExtension</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.0</version>
+	<version>1.1</version>
 	<name>TooltipExtension Add-on</name>
 	<organization>
 		<name>Vaadin Community</name>

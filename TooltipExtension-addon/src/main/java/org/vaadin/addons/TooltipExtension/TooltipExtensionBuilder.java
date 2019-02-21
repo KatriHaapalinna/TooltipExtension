@@ -370,6 +370,8 @@ public class TooltipExtensionBuilder {
      * Note that position can be different from the Builder tooltip position
      * which is returned by {@link #getTooltipPosition()}
      *
+     * @param component
+     *            target component
      * @return TooltipPosition
      */
     public TooltipPosition getTooltipPositionFor(AbstractComponent component) {
@@ -402,6 +404,8 @@ public class TooltipExtensionBuilder {
      * Note that value can be different from the Builder value which is returned
      * by {@link #getOpacityTransitionDuration()}
      *
+     * @param component
+     *            target component
      * @return int
      */
     public int getOpacityTransitionFor(AbstractComponent component) {
@@ -419,6 +423,8 @@ public class TooltipExtensionBuilder {
      * Returns the tooltip id for the component specified. If id is not set,
      * returns null.
      *
+     * @param component
+     *            target component
      * @return String
      */
     public String getTooltipIdFor(AbstractComponent component) {
@@ -440,6 +446,8 @@ public class TooltipExtensionBuilder {
      * Note that value can be different from the Builder value which is returned
      * by {@link #getPositionTransitionDuration()}
      *
+     * @param component
+     *            target component
      * @return int
      */
     public int getPositionTransitionFor(AbstractComponent component) {
@@ -460,6 +468,8 @@ public class TooltipExtensionBuilder {
      * Note that text can be different from the Builder tooltip text which is
      * returned by {@link #getTooltipText()}
      *
+     * @param component
+     *            target component
      * @return String
      */
     public String getTooltipTextFor(AbstractComponent component) {
